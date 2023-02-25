@@ -1,0 +1,23 @@
+[package]
+name = "soliddb"
+description = "simple wrapper around RocksDB"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+homepage = "https://github.com/pako8128/soliddb"
+repository = "https://github.com/pako8128/soliddb"
+keywords = ["database"]
+
+[dependencies]
+soliddb-derive = { version = "=0.1.0", path = "../soliddb-derive" }
+rocksdb = "0.20"
+serde = "1"
+ulid = { version = "1", features = ["serde"] }
+ron = "0.8"
+thiserror = "1"
+
+[dev-dependencies]
+serde = { version = "1", features = ["derive"] }
+temp-dir = "0.1"
+anyhow = "1"

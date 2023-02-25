@@ -1,0 +1,19 @@
+[package]
+name = "soliddb-derive"
+description = "derive definitions for soliddb"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+readme = "../README.md"
+homepage = "https://github.com/pako8128/soliddb"
+repository = "https://github.com/pako8128/soliddb"
+keywords = ["database"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1"
+syn = "1"
+quote = "1"
+darling = "0.14"
